@@ -8,7 +8,7 @@
 .music-mpd-container {
     display: flex;
     flex-direction: column;
-    line-height: 3rem;
+    line-height: 2.75em;
     letter-spacing: .03rem;
     height: inherit;
     overflow: hidden;
@@ -17,8 +17,8 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        border-radius: 1rem;
-        padding: .5rem;
+        border-radius: 1em;
+        padding: .1em;
 
         &:nth-child(odd) { background: rgba(255, 255, 255, 0.0); }
         &:nth-child(even) { background: $default-bg-3; }
@@ -63,7 +63,7 @@
         flex-direction: row;
         flex: 0 1 auto;
         order: 0;
-        @include calc(height, '100% - 10.1rem');
+        @include calc(height, '100% - 7.5em');
 
         .panel {
             height: 100%;
@@ -72,8 +72,8 @@
 
     .browser {
         width: 40%;
-        min-width: 20rem;
-        max-width: 35rem;
+        min-width: 20em;
+        max-width: 25em;
         background: $browser-panel-bg;
         font-size: .9em;
 
@@ -123,10 +123,10 @@
         .results-controls,
         .playlist-controls {
             width: 100%;
-            height: 4rem;
+            height: 3em;
             background: $playlist-controls-bg;
             border-bottom: $playlist-controls-border;
-            padding: .5rem 0;
+            padding: .75em 0;
 
             input[type=text] {
                 width: 100%;
@@ -134,8 +134,12 @@
 
             button {
                 @extend %ctrl-button;
-                padding: 0 .75rem;
+                padding: 0 .5em;
             }
+        }
+
+        .playlist-controls {
+            font-size: .9em;
         }
 
         .empty {
@@ -322,15 +326,16 @@
 
         form {
             margin-bottom: 0;
-            padding: 2.7rem;
+            padding: 2.5em;
+            min-width: 20em;
 
             .row {
-                padding: .5rem;
+                padding: .5em;
             }
 
             .footer {
-                padding-top: 1.5rem;
-                margin: 2.5rem 0;
+                padding-top: 1.5em;
+                margin: 2em 0;
                 border-top: $search-modal-footer-border;
 
                 .left {
@@ -339,8 +344,12 @@
                 }
             }
 
+            input[type=text] {
+                width: 100%;
+            }
+
             button, input[type=submit] {
-                border-radius: 5rem;
+                border-radius: 4em;
             }
         }
 
@@ -359,7 +368,7 @@
         }
 
         .results {
-            @include calc(height, '100% - 4.7rem');
+            @include calc(height, '100% - 3.1em');
         }
     }
 
@@ -405,10 +414,6 @@
 }
 
 #music-mpd-search-modal {
-    .header {
-        height: 3.8rem;
-    }
-
     .body {
         display: flex;
         padding: 0;

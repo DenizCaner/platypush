@@ -82,9 +82,13 @@ $widths: (
     }
 }
 
-@media (min-width: 720px) and (orientation:portrait) {
-    body {
-        font-size: $default-font-size-vertial;
+html {
+    font-size: $default-font-size;
+}
+
+@media (min-width: 640px) and (max-width: 1024px) and (orientation:portrait) {
+    html {
+        font-size: $default-font-size-vertical;
     }
 }
 

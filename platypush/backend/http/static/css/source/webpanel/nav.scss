@@ -16,6 +16,7 @@ nav {
     ul {
         position: relative;
         width: 75%;
+        height: 100%;
         display: inline-flex;
         margin: 0;
         padding: 0;
@@ -23,16 +24,14 @@ nav {
         align-items: center;
 
         li {
-            padding: 1rem 1.5rem;
+            padding: .75em 1em;
             display: inline-block;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: .1rem;
-            border-radius: 2rem;
+            border-radius: 2em;
 
             &:hover {
                 background: $hover-bg;
-                letter-spacing: .4rem;
             }
 
             a {
@@ -52,7 +51,7 @@ nav {
             }
 
             li.selected {
-                border-radius: 2rem;
+                border-radius: 2em;
             }
         }
     }
@@ -60,24 +59,24 @@ nav {
     .date-time {
         position: absolute;
         width: 25%;
-        display: inline-block;
-        right: 0;
-        margin-right: .7rem;
-        font-size: 14pt;
+        height: 100%;
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 1.3em;
         text-shadow: $nav-date-time-shadow;
 
         .time {
-            display: inline-block;
+            margin: 0 .5em;
         }
     }
 
     .settings {
-        display: inline-block;
-        padding: .75rem 1rem;
+        margin: 0 .75em;
 
         &:hover {
             background: $hover-bg;
-            border-radius: 3rem;
+            border-radius: 2em;
         }
     }
 }

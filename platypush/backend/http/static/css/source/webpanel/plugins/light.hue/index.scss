@@ -6,8 +6,8 @@
     display: flex;
     color: $default-fg-2;
     font-weight: 400;
-    line-height: 3.8rem;
-    letter-spacing: .1rem;
+    line-height: 2.5em;
+    letter-spacing: .075em;
     border-bottom: $default-border-2;
     border-radius: 0 0 1em 1em;
 
@@ -69,14 +69,14 @@
                 }
 
                 * > .fa {
-                    font-size: 2.5rem;
+                    font-size: 2em;
                     color: $light-hue-icon-color;
                 }
 
                 * > .color-logo {
-                    width: 2rem;
-                    height: 2rem;
-                    border-radius: 1rem;
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 1em;
                 }
 
                 * > .color-logo-red { background-color: red; }
